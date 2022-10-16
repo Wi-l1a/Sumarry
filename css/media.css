@@ -19,12 +19,14 @@
 
     }
 
-    .main-article-box_title {
-        display: block;
+    .main-article-box_title_block {
+        display: flex;
+        justify-content: center;
+
     }
 
-    .main-article-box_title .main-article-box_title_block:last-child {
-        width: 73%;
+    .main-article-box_title {
+        display: block;
     }
 
 
@@ -35,8 +37,8 @@
     }
 
     .article_box-number {
-        flex: 0 1 40%;
         text-align: center;
+        flex: 0 1 30%;
     }
 
     .article_box-number p {
@@ -45,16 +47,12 @@
     }
 
     .adaption_box-title {
-        flex: 0 1 60%;
-    }
-
-    .adaption_box-number {
-        flex: 0 1 32%;
+        display: flex;
+        flex-direction: column;
     }
 
     .box_title_block_three {
         width: 100%;
-
     }
 
     .box_title_block_three h2 {
@@ -81,5 +79,7 @@
         width: 50%;
     }
 
-
+    .box_title_block {
+        flex: 0 1 80%;
+    }
 }
