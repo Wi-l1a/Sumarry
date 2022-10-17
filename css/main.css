@@ -289,7 +289,7 @@ body {
 
 .contact-block_address p,
 .contact-block_address a {
-	font-size: calc(var(--index) * .7);
+	font-size: 20px;
 	text-decoration: none;
 	color: white;
 	display: flex;
@@ -300,7 +300,8 @@ body {
 
 .contact-block_address p:hover,
 .contact-block_address a:hover {
-	font-size: calc(var(--index) * .8);
+	font-size: 23px;
+
 	color: rgb(178, 221, 235);
 }
 
