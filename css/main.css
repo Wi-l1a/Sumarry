@@ -82,7 +82,17 @@ body {
 
 .layers__front {
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }
+
+.box-arrow {
+	z-index: 2;
+	margin-bottom: 10%;
+}
+
+
 
 .layer__header {
 	z-index: 1;
@@ -103,7 +113,7 @@ body {
 .layers__caption {
 	font-size: calc(var(--index) / 1.175);
 	letter-spacing: calc(var(--index) / 3.5);
-	margin-top: calc(var(--index) * -.75);
+	margin-top: calc(var(--index) * -2);
 }
 
 .main-article {
@@ -246,26 +256,55 @@ body {
 	will-change: transform;
 }
 
+
 .contact-block {
 	background: #000;
-	box-shadow: 0 -20px 40px 0 black;
-
+	box-shadow: 0 -20px 300px 0 black;
+	padding-bottom: 5%;
 }
 
 .contact-block_general {
 	display: flex;
-	justify-content: space-between;
-	min-height: 40vh;
+	justify-content: center;
+	flex-direction: column;
+	border: solid 2px white;
+	gap: 10px;
+
+}
+
+.contact-block_general h2 {
+	margin-left: 15%;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * 1);
+	color: var(--text);
+	text-shadow: 0 0 15px #9d822b;
+	line-height: 45px;
 }
 
 .contact-block_address {
-	flex: 0 1 65%;
-	border: solid 2px white;
-
+	display: flex;
+	gap: 10px;
+	justify-content: center;
 }
 
-.contact-block_ava {
-	flex: 0 1 30%;
-	border: solid 2px white;
+.contact-block_address p,
+.contact-block_address a {
+	font-size: calc(var(--index) * .7);
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	transition: 0.5s;
+}
 
+.contact-block_address p:hover,
+.contact-block_address a:hover {
+	font-size: calc(var(--index) * .8);
+	color: rgb(178, 221, 235);
+}
+
+.contact-block_address p img,
+.contact-block_address a img {
+	width: 10%;
 }
